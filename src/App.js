@@ -5,10 +5,11 @@ import './App.css'
 import Search from "./components/Search";
 import ListItem from "./components/ListItem";
 
+
 class App extends Component{
 
   state = {
-    results: []
+    results: [],
   }
 
   getResults = (e) => {
