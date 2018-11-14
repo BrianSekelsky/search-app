@@ -4,8 +4,8 @@ const Search = (props) => {
 
 	return(
 		<form onSubmit={props.getTitle}>
-			<input className="search" type="text" name="searchterm" />
-			<button>Submit</button>
+			<input className="search" placeholder="Search (e.g. cancer)" type="text" name="searchterm" />
+			<button className="submit-button">Submit</button>
 		</form>
 	);
 
