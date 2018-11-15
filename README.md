@@ -1,44 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Brian Sekelsky
+Tempus Applicant
+Submitted: 11/14/18
 
-## Available Scripts
+I uploaded the build version of the app but the code can be found on bitbucket here
+https://bitbucket.org/briansekelsky/search-app/src/master/
 
-In the project directory, you can run:
+I decided to use Reactjs in-order to demonstrate my knowledge of and get some more practice in the library
 
-### `npm start`
+The searches from the Open Trials API were already objects so I thought I should just store them in an array
+inside the App's state. If I were to re-do this I think making a component for these objects would be better.
+I could store public_title, status, age_range, etc as props for that component.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Then I separated the UI into a search bar and a list.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Search uses axios to perform the Https GET requests.
 
-### `npm test`
+The list is a collection of ListItems.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ListItems is a component which formats all the necessary data from each search result.
 
-### `npm run build`
+There is also a "Download Report of Selected Trials" button which creates a pdf of the public_titles from
+all the selected results.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If I could offer some more time to this project I would go back and create a component for storing the search results. This would greatly simplify the process of exporting the pdf.
