@@ -1,10 +1,3 @@
-Brian Sekelsky
-Tempus Applicant
-Submitted: 11/14/18
-
-I uploaded the build version of the app but the code can be found on bitbucket here
-https://bitbucket.org/briansekelsky/search-app/src/master/
-
 I decided to use Reactjs in-order to demonstrate my knowledge of and get some more practice in the library
 
 The searches from the Open Trials API were already objects so I thought I should just store them in an array
